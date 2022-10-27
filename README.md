@@ -1,2 +1,2 @@
 ### LeetCode
-A list of solved problems on LeetCode
+a list of my LeetCode solutions
