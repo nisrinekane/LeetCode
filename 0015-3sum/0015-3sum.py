@@ -11,14 +11,14 @@ class Solution:
             # set left and right pointers
             left = i+1
             right = len(nums)-1
-            # iterate through both ways
+            # iterate  both ways simultaneously using pointers
             while left < right:
                 # assign to a temporaty varibable the sum of three values (i, left: right of i and right: coming from end of loop)
                 total = nums[i] + nums[left] + nums[right]
-                # if total is negative continur to the right
+                # if total is negative pass and continur to the right
                 if total < 0:
                     left += 1
-                # if total is positive continue to the left
+                # if total is positive pass and continue to the left
                 elif total > 0:
                     right -= 1
                 # if they equal zero, add those values to the result
@@ -29,6 +29,7 @@ class Solution:
                         left += 1
                     while left < right and nums[right] == nums[right-1]:
                         right -= 1
+                     # increment while loop pointers or will result in infinite loop   
                     left += 1
                     right -= 1
         return result
