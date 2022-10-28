@@ -1,5 +1,5 @@
 ### LeetCode
 
 * A list of my LeetCode solutions
-* Attempting to solve each problem in both Python and Java
-* Older solutions were moved to subfolders
+* I attempted to solve problems in both Python and Java
+* I moved older solutions from main to subfolders
