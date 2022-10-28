@@ -1,2 +1,3 @@
 ### LeetCode
-a list of my LeetCode solutions
+A list of my LeetCode solutions
+Attempting to solve each problem in both Python and Java
