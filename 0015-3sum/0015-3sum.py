@@ -24,7 +24,7 @@ class Solution:
                 # if they equal zero, add those values to the result
                 else:
                     result.append([nums[i], nums[left], nums[right]])
-                    #  this to skip more duplicates
+                    #  this to skip more duplicates in edge cases, code will work without lines 28-31 but wont pass leetcode test cases
                     while left < right and nums[left] == nums[left+1]:
                         left += 1
                     while left < right and nums[right] == nums[right-1]:
