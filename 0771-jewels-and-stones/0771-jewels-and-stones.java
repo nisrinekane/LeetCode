@@ -1,9 +1,9 @@
+// using regex
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 class Solution {
-    public int numJewelsInStones(String jewels, String stones) {
-//        optimized solution with  regex  
+    public int numJewelsInStones(String jewels, String stones) { 
 //        instantiate the pattern to look through
         Pattern pattern = Pattern.compile("[" + jewels + "]");
 //        instantiate match to look for
