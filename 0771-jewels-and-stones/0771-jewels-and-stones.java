@@ -1,13 +1,19 @@
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 class Solution {
     public int numJewelsInStones(String jewels, String stones) {
+//        optimized solution with  regex  
+//        instantiate the pattern to look through
+        Pattern pattern = Pattern.compile("[" + jewels + "]");
+//        instantiate match to look for
+        Matcher matcher = pattern.matcher(stones);
+//        instantiate counter
         int count = 0;
-        for (int i=0; i<jewels.length(); i++) {
-            for (int j = 0; j < stones.length(); j++) {
-                if (jewels.charAt(i) == stones.charAt(j)) {
-                    count++;
-                }
-            }
+//        while there is a match, increment counter
+        while (matcher.find()) {
+            count++;
         }
-            return count;
+        return count;
     }
 }
