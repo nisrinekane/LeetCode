@@ -1,3 +1,4 @@
+> #### note: I thought I was solving in java, accidental c++ solution
 <h2><a href="https://leetcode.com/problems/number-of-good-pairs/">1512. Number of Good Pairs</a></h2><h3>Easy</h3><hr><div><p>Given an array of integers <code>nums</code>, return <em>the number of <strong>good pairs</strong></em>.</p>
 
 <p>A pair <code>(i, j)</code> is called <em>good</em> if <code>nums[i] == nums[j]</code> and <code>i</code> &lt; <code>j</code>.</p>
