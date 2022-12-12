@@ -19,7 +19,7 @@ class Solution {
         if (root == null) {
         return 0;
     }
-//         solving recursively, wil still work in asymetrical tree:
+//         solving recursively, add one for root, wil still work in asymetrical tree:
     return 1 + Math.max(maxDepth(root.left), maxDepth(root.right));
     }
 }
