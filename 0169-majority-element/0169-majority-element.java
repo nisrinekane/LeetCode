@@ -15,6 +15,8 @@ class Solution {
         }
         
 //      instantiate variable for key and one for its value:
+//         that way you can keep comparing the actual value (in v)
+//         and storing the new result (the actual number, in k)
         int k = 0;
         int v = 0;
         for (int i:map.keySet()) {
