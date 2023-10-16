@@ -8,10 +8,5 @@ class Solution:
             mod_s[left], mod_s[right] = mod_s[right], mod_s[left]
             left += 1
             right -= 1
-        # handle trimming         
-        if mod_s[0] == ' ':
-            mod_s.pop(0)
-        if mod_s[len(mod_s) - 1] == ' ':
-            mod_s.pop(-1)
-            
+        # removed manual trimming as split() handles that            
         return ' '.join(mod_s)
