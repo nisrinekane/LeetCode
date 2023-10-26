@@ -1,12 +1,14 @@
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        # hashmap solution:
-        hashmap = {}
-        for i in range(len(nums)):
-#             store difference between target and current element 
-            difference = target - nums[i]
-#     if the value exists in hash, return current element and difference
-            if difference in hashmap:
-                return [i, hashmap[difference]]
-#                 default: add current element' to hashmap
-            hashmap[nums[i]] = i
+        seen = {}
+        for n in range(len(nums)):
+#             calculate the amount needed to reach target
+            difference = target - nums[n]
+#     if the difference exists in sum
+            if difference in seen:
+#         return its index and the current index
+                return [seen[difference], n]
+#  add current number's index to dictionary
+            seen[nums[n]] = n
+            
+        
