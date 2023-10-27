@@ -1,14 +1,11 @@
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         seen = {}
-        for n in range(len(nums)):
-#             calculate the amount needed to reach target
-            difference = target - nums[n]
-#     if the difference exists in sum
+        for i in range(len(nums)):
+            difference = target - nums[i]
             if difference in seen:
-#         return its index and the current index
-                return [seen[difference], n]
-#  add current number's index to dictionary
-            seen[nums[n]] = n
+                return [i, seen[difference]]
+            else:
+                seen[nums[i]] = i
             
         
